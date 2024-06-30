@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forums"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/Heading"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ellipse1"
+               >
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageView
+
+                android:id="@+id/edit_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/plus_icon"
+                android:layout_alignBottom="@id/image"
+                android:layout_alignEnd="@id/image"
+                android:layout_marginTop="-12dp">
+            </ImageView>
+            <TextView
+
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayesha"
+                android:fontFamily="@font/dm_sans_24pt_bold"
+                android:layout_toRightOf="@id/image"
+                android:layout_alignTop="@id/image"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginLeft="30dp"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/options1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/name">
+
+            </ImageView>
+
+
+            <TextView
+
+                android:id="@+id/showPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As you work to manage physical symptoms like hot flashes and insomnia, it's also important to find ways to cope with emotional ones, be them mood swings or challenges mentally adjusting to this new phase in your life."
+                android:fontFamily="@font/outfit_light"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/image"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:fontFamily="@font/outfit_medium"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_alignRight="@id/showPost"
+                android:layout_alignBottom="@id/showPost"
+                >
+
+            </TextView>
+
+
+            <View
+
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#AAAAAA"
+                android:layout_below="@id/showPost"
+                android:layout_marginTop="30dp">
+
+            </View>
+
+
+            <RelativeLayout
+
+                android:id="@+id/promptBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/type"
+                android:layout_marginBottom="20dp">
+
+
+
+                    <EditText
+
+                        android:id="@+id/input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Add Your Thoughts..."
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:layout_toLeftOf="@+id/sendIcon"
+                        android:background="@drawable/type"
+                        android:fontFamily="@font/outfit_regular"
+
+                        >
+
+                    </EditText>
+
+                <ImageView
+                    android:id="@+id/attachFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/sendIcon"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/attach_file3"
+                    android:layout_marginRight="10dp"/>
+
+
+                <ImageView
+                    android:id="@+id/sendIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/send5"
+                    android:layout_marginRight="10dp"/>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+</LinearLayout>

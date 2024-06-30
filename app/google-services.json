@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594189576779",
+    "project_id": "herhealth-9ac3b",
+    "storage_bucket": "herhealth-9ac3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594189576779:android:bb829f469d08fe48507bce",
+        "android_client_info": {
+          "package_name": "com.example.herhealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANHxxjCMlGFfWAYxa6or1fcDRVz6mYD3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

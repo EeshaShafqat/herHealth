@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+
+
+        <TextView
+
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="30m"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/PostTitle"
+            android:layout_alignBottom="@id/PostTitle"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp">
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/PostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dealing with period pain"
+            android:fontFamily="@font/outfit_semibold"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="30dp"
+            android:layout_toLeftOf="@id/time"
+            android:layout_marginEnd="10dp">
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tips &amp; Suggestions"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:fontFamily="@font/outfit_semibold"
+            android:layout_below="@id/PostTitle"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gray_bg"
+            android:paddingHorizontal="10dp"
+            android:layout_marginLeft="30dp">
+
+        </TextView>
+        <TextView
+
+            android:id="@+id/postContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hey everyone! I wanted to share some of the strategies I've found helpful in dealing with period pain. I know that for many of us, those days of the month can be really challenging..."
+            android:fontFamily="@font/outfit_regular"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tips"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="30dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/postContent">
+
+            <com.theophrast.ui.widget.SquareImageView
+                android:id="@+id/postImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hwRatio="1"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/womens_day1"
+                android:visibility="visible" />
+
+            <com.example.herhealth.TextureVideoView
+                android:id="@+id/cropTextureView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:hwRatio="1"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/display"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignEnd="@id/postContent"
+            android:layout_alignStart="@id/postContent"
+            android:paddingHorizontal="30dp">
+
+            <ImageView
+
+                android:id="@+id/upvote"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/growth_1_1"
+                >
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/upCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_toRightOf="@id/upvote"
+                android:layout_alignTop="@id/upvote"
+                android:layout_alignBottom="@id/upvote"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="15sp"/>
+
+
+            <ImageView
+
+                android:id="@+id/downvote"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/growth_1_2"
+                android:layout_toRightOf="@id/upCount"
+                android:layout_marginLeft="15dp"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/downCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_toRightOf="@id/downvote"
+                android:layout_alignTop="@id/upvote"
+                android:layout_alignBottom="@id/upvote"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="15sp"/>
+
+            <ImageView
+
+                android:id="@+id/comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chat_box1"
+                android:layout_toRightOf="@id/downCount"
+                android:layout_marginLeft="15dp"
+                android:layout_alignTop="@id/upvote"
+                android:layout_alignBottom="@id/upvote"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chat_box2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/upvote"
+                android:layout_alignBottom="@id/upvote"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

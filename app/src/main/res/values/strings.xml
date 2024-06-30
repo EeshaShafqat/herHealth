@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">HerHealth</string>
+    <string name="title"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Close Navigation Open</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string-array name="spinner_items">
+        <item>New Forum</item>
+        <item>New Post</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+    <string-array name="new_post">
+        <item>New Post</item>
+        <item>New Forum</item>
+
+
+    </string-array>
+
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+
+
+    <string-array name="add_to_forum">
+        <item>Add to a Forum</item>
+        <item>forum A </item>
+        <item>forum B </item>
+
+    </string-array>
+
+
+    <string name="title_activity_new_forums">NewForums</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="title_activity_drawer">drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="following">Following</string>
+    <string name="follow">Follow</string>
+    <string name="menstruatingwomenpakistan">MenstruatingWomenPakistan</string>
+
+
+</resources>

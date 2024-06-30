@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="@color/white"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/existing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Add the Toolbar as a sibling of DrawerLayout -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:titleEnabled="false"
+            android:layout_gravity="start"
+            app:collapseIcon="@drawable/ic_menu"
+
+            >
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="100dp"
+                android:id="@+id/newPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Settings"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="17dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Account Settings"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/username"
+                android:paddingLeft="17dp"
+                android:layout_alignLeft="@id/head"
+                android:layout_alignTop="@id/head"
+                android:paddingRight="17dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/outfit_light"
+                android:textSize="20sp"
+                android:gravity="fill"
+                android:textAllCaps="false"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/profile"
+                android:drawableRight="@drawable/down_arrow3"
+                android:background="@drawable/round_lightgrey_rectangle"
+                android:text="Change Username">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/email"
+                android:layout_alignLeft="@id/username"
+                android:layout_alignTop="@id/username"
+                android:layout_width="match_parent"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+
+                android:layout_marginTop="70dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/outfit_light"
+                android:textSize="20sp"
+                android:gravity="fill"
+                android:drawablePadding="20dp"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/mail"
+                android:drawableRight="@drawable/down_arrow3" android:background="@drawable/round_lightgrey_rectangle"
+                android:text="Update Email">
+
+            </Button>
+
+            <Button
+                android:id="@+id/password"
+                android:layout_alignLeft="@id/email"
+                android:layout_alignTop="@id/email"
+                android:layout_width="match_parent"
+                android:layout_marginTop="70dp"
+                android:paddingRight="17dp"
+
+                android:paddingLeft="17dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/outfit_light"
+                android:textSize="20sp"
+                android:gravity="fill"
+                android:drawablePadding="20dp"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/padlock1"
+                android:drawableRight="@drawable/down_arrow3"
+                android:background="@drawable/round_lightgrey_rectangle"
+                android:text="Change Password">
+
+            </Button>
+
+
+
+            <TextView
+                android:id="@+id/general"
+                android:layout_alignLeft="@id/password"
+                android:paddingLeft="17dp"
+                android:layout_alignTop="@id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="General"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/report"
+                android:paddingRight="17dp"
+                android:layout_alignLeft="@id/general"
+                android:layout_alignTop="@id/general"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="17dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/outfit_light"
+                android:textSize="20sp"
+                android:gravity="fill"
+                android:drawablePadding="20dp"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/edit"
+                android:drawableRight="@drawable/down_arrow3"
+                android:background="@drawable/round_lightgrey_rectangle"
+                android:text="Report a Problem">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!-- NavigationView -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu"
+        app:headerLayout="@layout/header"
+        app:itemTextAppearance="@style/MyMenuItemStyle"
+        app:itemIconTint="@null"
+
+
+        />
+</androidx.drawerlayout.widget.DrawerLayout>

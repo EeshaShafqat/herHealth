@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HerHealth" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+
+    <style name="MyMenuItemStyle">
+        <item name="android:fontFamily">@font/outfit_regular</item>
+        <item name="android:textSize">30sp</item> <!-- Adjust the text size as needed -->
+        <item name="android:paddingVertical">20dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="itemSpacing">30dp</item>
+        <item name="android:layout_gravity">start</item>
+
+    </style>
+
+    <style name="SpinnerPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout">@layout/spinner_dropdown</item>
+    </style>
+
+
+    <style name="Theme.HerHealth" parent="Base.Theme.HerHealth" />
+
+    <style name="Theme.HerHealth.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.HerHealth.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.HerHealth.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

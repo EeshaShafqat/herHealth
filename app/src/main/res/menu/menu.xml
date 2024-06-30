@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/settings"
+            app:actionLayout="@layout/settings_layout1"
+            app:showAsAction="always"
+            android:title=""
+            android:titleCondensed="Settings"
+
+
+
+            />
+
+        <item
+            android:id="@+id/admin_panel"
+            app:actionLayout="@layout/admin_panel_layout"
+            app:showAsAction="always"
+            android:title=""
+            android:titleCondensed="Admin Panel"
+
+            />
+
+
+
+        <item
+            android:id="@+id/signout"
+            app:actionLayout="@layout/signout_layout1"
+            app:showAsAction="always"
+            android:title=""
+            android:titleCondensed="Sign Out"
+
+            />
+
+    </group>
+
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_bg"
+    android:padding="10dp">
+
+
+    <TextView
+
+        android:id="@+id/analytics"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/type"
+        android:fontFamily="@font/outfit_bold"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="Analytics"
+        android:textColor="@color/black"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <TextView
+
+        android:id="@+id/settings"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:fontFamily="@font/outfit_bold"
+        android:textColor="@color/black"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/type"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/analytics"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        >
+
+    </TextView>
+    <TextView
+
+        android:id="@+id/signOut"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:text="Sign Out"
+        android:textSize="24sp"
+        android:fontFamily="@font/outfit_bold"
+        android:textColor="#FF0000"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/type"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/settings"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="10dp"
+        >
+
+    </TextView>
+
+</RelativeLayout>

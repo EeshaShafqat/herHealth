@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="@color/white"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/existing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Add the Toolbar as a sibling of DrawerLayout -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:titleEnabled="false"
+            android:layout_gravity="start"
+            app:collapseIcon="@drawable/ic_menu"
+
+            >
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context=".MainActivity"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="User"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Management"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/reporting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="Remove a User"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/currentusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="User to Remove"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/corners_fields"
+                    android:drawablePadding="12dp"
+                    android:textSize="16sp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="12dp"
+                    android:fontFamily="@font/outfit_medium" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="Describe the reason for removal"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/describe"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/outfit_light"
+                    android:text="Add any screenshot that may be relevant"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/corners_fields"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/outfit_medium"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="12dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_attach_file_24"
+                    android:layout_margin="10dp"
+                    android:layout_alignBottom="@+id/problem"
+                    android:layout_alignEnd="@id/problem"
+                    >
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/remove"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/round_blue"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="Remove"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!-- NavigationView -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu"
+        app:headerLayout="@layout/header"
+        app:itemTextAppearance="@style/MyMenuItemStyle"
+        app:itemIconTint="@null"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>

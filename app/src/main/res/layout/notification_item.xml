@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:foreground="@drawable/grey_selectable"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+
+            android:id="@+id/image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@color/gray_textbox"
+            android:layout_marginVertical="10dp"
+
+           />
+
+        <com.theophrast.ui.widget.SquareImageView
+
+            android:id="@+id/postImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@color/gray_textbox"
+            android:layout_marginVertical="10dp"
+            android:layout_alignParentEnd="true"
+            />
+
+
+        <TextView
+
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:text="Ayesha"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/outfit_semibold"
+            android:layout_alignTop="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:layout_marginLeft="20dp"
+
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/verified"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/verified"
+            android:layout_toRightOf="@id/name"
+            android:layout_alignTop="@id/name"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"
+            />
+
+
+        <TextView
+
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:text="Ramsha liked your post"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:fontFamily="@font/outfit_light"
+            android:layout_toRightOf="@id/image"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/name"
+
+
+            />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

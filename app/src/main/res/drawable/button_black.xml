@@ -1,0 +1,27 @@
+<!-- rectangle_with_borders.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Black upper border -->
+    <item android:top="0dp" >
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#373737" /> <!-- Black color for the upper border -->
+        </shape>
+    </item>
+    <!-- White middle with no left and right borders -->
+    <item android:top="2dp" >
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+    <!-- Gray lower border -->
+    <item android:top="2dp" >
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#258A8A8A" /> <!-- Gray color for the lower border -->
+        </shape>
+    </item>
+</layer-list>

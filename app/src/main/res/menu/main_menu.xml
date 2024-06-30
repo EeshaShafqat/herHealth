@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/settings"
+            app:actionLayout="@layout/settings_layout"
+            app:showAsAction="always"
+            android:title=""
+            android:titleCondensed="Settings"
+
+
+
+        />
+
+        <item
+            android:id="@+id/forums"
+            app:actionLayout="@layout/community_layout"
+            app:showAsAction="always"
+            android:title=""
+            android:titleCondensed="Forums"
+
+            />
+
+        <item
+            android:id="@+id/chatbot"
+            app:actionLayout="@layout/chatbot_layout"
+            app:showAsAction="always"
+            android:title=""
+            android:titleCondensed="AI Chat"
+
+            />
+
+        <item
+            android:id="@+id/signout"
+            app:actionLayout="@layout/signout_layout"
+            app:showAsAction="always"
+            android:title=""
+            android:titleCondensed="Sign Out"
+
+            />v
+
+    </group>
+
+</menu>

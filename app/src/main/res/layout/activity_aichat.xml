@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end"
+    android:background="#3CD5DDDF"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/existing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Add the Toolbar as a sibling of DrawerLayout -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            app:titleEnabled="false"
+            android:layout_gravity="start"
+            app:collapseIcon="@drawable/ic_menu"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            >
+
+        <ScrollView
+            android:id="@+id/conversationScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/type"
+            android:scrollbars="none"
+            android:layout_marginBottom="20dp"
+
+            >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+
+
+       >
+
+        <!-- AI CHAT heading -->
+        <TextView
+            android:id="@+id/chatHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI CHAT"
+            android:textSize="44sp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/black"
+            />
+
+        <ProgressBar
+            android:id="@+id/loadingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatHeading"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/askAnyQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/outfit_medium"
+            android:text="Ask any Health Related Question, and let Ayesha help you!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+             <LinearLayout
+
+            android:id="@+id/samplePromptLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/askAnyQ"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"/>
+
+
+            <LinearLayout
+                        android:id="@+id/conversationLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+
+        </RelativeLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/type"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="14dp"
+                        android:layout_alignParentBottom="true"
+
+                      >
+
+                        <RelativeLayout
+
+                            android:id="@+id/mic_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                        <EditText
+
+                            android:id="@+id/input"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Type..."
+                            android:paddingStart="20dp"
+                            android:paddingVertical="10dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/outfit_regular"
+                            android:paddingRight="40dp"
+
+
+                            />
+
+
+
+                        <ImageView
+                            android:id="@+id/sendIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/send"
+                            android:layout_toRightOf="@id/input"/>
+
+                    <ImageView
+                        android:id="@+id/mic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:src="@drawable/microphone_black_shape3"
+                        app:tint="@color/black"
+                        android:clickable="true"
+                        android:onClick="onMicButtonClick"
+                        android:visibility="visible"
+                        android:layout_toRightOf="@id/sendIcon"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:paddingVertical="10dp"
+
+                       />
+
+                    <ImageView
+                        android:id="@+id/voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:src="@drawable/voice"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        app:tint="@color/black"
+                        android:clickable="true"
+                        android:onClick="onMicButtonClick"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@id/sendIcon"
+                        android:paddingVertical="10dp"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <!-- Other UI components -->
+
+        <!-- Conversation ScrollView -->
+
+
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!-- NavigationView -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/main_menu"
+        app:headerLayout="@layout/header"
+        app:itemTextAppearance="@style/MyMenuItemStyle"
+        app:itemIconTint="@null"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

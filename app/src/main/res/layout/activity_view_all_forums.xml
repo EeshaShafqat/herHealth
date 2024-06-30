@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forums"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/yourForums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forums"
+            android:textSize="30sp"
+            android:fontFamily="@font/outfit_medium"
+            android:textColor="@color/black"
+            android:layout_below="@id/Heading"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yourForums"
+            android:layout_marginTop="35dp"
+            android:scrollbars="none">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+

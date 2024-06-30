@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="85dp"
+        android:adjustViewBounds="true"
+        android:background="#E2D9DC"
+        android:scaleType="centerInside"
+        android:src="@drawable/girl1" />
+
+    <TextView
+        android:id="@+id/samplePromptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/iconImageView"
+        android:background="@drawable/sample_prompt_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/outfit_regular"
+        android:padding="20dp"
+        android:text="Why is my menstrual cycle irregular?"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

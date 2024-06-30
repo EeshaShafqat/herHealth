@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:layout_marginBottom="63dp"
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/black_gradient"
+            android:orientation="vertical"
+
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                android:weightSum="3"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_weight="1"
+                    android:src="@drawable/ellipse1"
+
+
+                    >
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <LinearLayout
+
+                    android:id="@+id/postLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Glow Text View -->
+
+
+
+
+                    <TextView
+
+                        android:id="@+id/postCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/dm_sans_24pt_bold"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+
+                        >
+
+                    </TextView>
+
+                    <TextView
+
+                        android:id="@+id/Posts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/dm_sans_24pt_regular"
+                        android:text="posts"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+
+                        >
+
+                    </TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/followerLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:foreground="@drawable/pink_selectable"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:id="@+id/followerCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/dm_sans_24pt_bold"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+
+                        >
+
+                    </TextView>
+
+                    <TextView
+
+                        android:id="@+id/Followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/dm_sans_24pt_regular"
+                        android:text="members"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+
+                        >
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="15dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image"
+                    android:fontFamily="@font/dm_sans_24pt_bold"
+                    android:text="Forum Name"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+
+                <ImageView
+                    android:id="@+id/verificationStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/name"
+                    android:src="@drawable/verified"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans_24pt_regular"
+                    android:paddingHorizontal="15dp"
+                    android:text="Created By:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/createdBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/created"
+                    android:fontFamily="@font/dm_sans_24pt_bold"
+                    android:text="Ayesha"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/descShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/down_arrow"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/dm_sans_24pt_regular"
+                android:paddingHorizontal="15dp"
+                android:text="Show"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/identity"
+                android:layout_marginTop="10dp"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/dm_sans_24pt_regular"
+                android:paddingHorizontal="15dp"
+                android:text="Forum Description......."
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/descHide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/up_arrow"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/dm_sans_24pt_regular"
+                android:paddingHorizontal="15dp"
+                android:text="Hide"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                />
+
+            <RelativeLayout
+
+                android:id="@+id/stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bio"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+
+                <Button
+
+                    android:id="@+id/follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@drawable/button_background_hover"
+                    android:drawableEnd="@drawable/follow"
+                    android:fontFamily="@font/dm_sans_24pt_regular"
+                    android:paddingHorizontal="15dp"
+                    android:text="Follow"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/shine"
+                android:layout_width="50dp"
+                android:layout_height="5dp"
+                android:src="@drawable/shine"
+                android:layout_alignTop="@id/follow"
+                android:layout_alignStart="@id/follow"
+                android:layout_marginStart="-100dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="#3CE3E7E8"
+
+            >
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

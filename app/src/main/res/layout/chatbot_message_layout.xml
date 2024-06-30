@@ -1,0 +1,46 @@
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/replybox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:layout_marginBottom="8dp"
+
+        >
+
+        <!-- ScrollView wrapping the TextView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            >
+
+            <!-- TextView displaying chatbot's reply -->
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aibubble"
+                android:visibility="visible"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:text="reply"
+                android:fontFamily="@font/outfit_regular"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_gravity="end"/>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+
