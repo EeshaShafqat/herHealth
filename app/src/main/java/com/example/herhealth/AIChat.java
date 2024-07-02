@@ -436,7 +436,7 @@ public class AIChat extends AppCompatActivity implements NavigationView.OnNaviga
     private void generateReplyFromSpeech() {
         // Replace with your machine's IP address
        // String url = "http://192.168.43.40:5000/predict_speech";
-        String url = "https://wholly-assuring-bobcat.ngrok-free.app/predict_speech";
+        String url = "";
 
       //  Toast.makeText(this, url, Toast.LENGTH_SHORT).show();
 
