@@ -357,7 +357,7 @@ public class AIChat extends AppCompatActivity implements NavigationView.OnNaviga
 
     private void generateReply(String inputText) {
        // String url = "http://192.168.43.40:5000/predict"; // URL for the POST request
-        String url ="https://wholly-assuring-bobcat.ngrok-free.app/predict";
+        String url ="";
 
         // Create a JSON object to hold the input text
 //        JSONObject postData = new JSONObject();
