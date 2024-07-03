@@ -1,0 +1,3 @@
+HerHealth is an all encompassing women's health app featuring Community Forums, Realtime Analytics and AI chat, where women can get access to reliable and timely information about various domains ranging from menstrual health, mental health, physical health through our AI Chatbot
+It's imperative that any information regarding health is as accurate as possible and what makes our implementation better than any other chatbot available like chatgpt which is prone to hallucinations, is our usage of RAG with langchain, verified documents, and using a classifier to filter user queries. 
+Furthermore, the forums allow women all over to share their experiences, and the realtime analytics helps Partner Organizations like NGOs to become aware of areas that require their attention.
